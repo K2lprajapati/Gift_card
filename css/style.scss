@@ -1,0 +1,873 @@
+@import "../font/popins/stylesheet.css";
+@import url("https://use.typekit.net/ykz2ceq.css");
+/*------------------------*/
+/*-------common css-------*/
+/*------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #f5f7f9;
+  line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Poppins';
+}
+
+/*----start here sign-up page-------*/
+
+/*-------------------------*/
+/*----start here navbar----*/
+/*-------------------------*/
+.custom-nav {
+  background-color: #fff;
+  box-shadow: 0 9px 22px -4px rgba(45, 45, 45, 0.2);
+  height: 85px;
+  @media screen and (max-width: 575px) {
+    height: auto;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    height: auto;
+    text-align: center;
+  }
+
+  img {
+    width: 245px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media screen and (max-width: 575px) {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    @media screen and (max-width: 1024px) {
+      width: 106px;
+    }
+  }
+
+  .navbar-brand {
+    color: #444444;
+    font-weight: 600;
+    font-size: 36px;
+
+    span {
+      font-weight: 100;
+    }
+  }
+
+  .custom-collapse {
+    ul.navbar-nav {
+      li.nav-item {
+        width: 140px;
+        @media screen and (max-width: 575px) {
+          width: auto;
+        }
+
+        a.nav-link {
+          font-weight: 600;
+          color: #444444;
+          text-transform: uppercase;
+          font-size: 16px;
+
+          &.active {
+            color: #f02264;
+          }
+
+          &:active {
+            color: #f02264;
+          }
+
+          &:hover {
+            color: #f02264;
+          }
+        }
+
+        .dropdown {
+          .dropdown-toggle {
+            background-color: #f02264;
+            border: 0;
+
+            span {
+              &:after {
+                content: "";
+                border: 1px solid #fff;
+                right: 59px;
+                position: absolute;
+                top: 0;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-------------------------*/
+/*----start here breadcrumb----*/
+/*-------------------------*/
+.custom-breadcrumb {
+  .breadcrumb {
+    background-color: unset;
+    font-size: 16px;
+  }
+}
+
+/*-----------------------------*/
+/*----start here breadcrumb----*/
+/*-----------------------------*/
+.sign-up-form-section {
+  padding: 80px 0;
+  @media screen and (max-width: 575px) {
+    padding: 30px 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 30px 0;
+  }
+
+  .sign-up-form {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.1);
+    @media screen and (max-width: 575px) {
+      padding: 15px;
+    }
+
+    input[type=checkbox] {
+      background-color: #fff;
+      border-radius: 3px;
+      width: 15px;
+      height: 15px;
+      border: 0;
+    }
+
+    .custom-submit-btn {
+      margin-top: 10px;
+      background-color: #f02264;
+      border: unset;
+      font-size: 16px;
+      font-weight: bold;
+      height: 40px;
+    }
+
+    .custom-google-btn {
+      background-color: #ec4949;
+      font-size: 14px;
+      color: #fff;
+      border: 0;
+      width: 50%;
+      @media screen and (max-width: 575px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      span {
+        i {
+          color: #fff;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .custom-facebook-btn {
+      background-color: #3b5998;
+      font-size: 14px;
+      border: 0;
+      width: 50%;
+      margin-left: 10px;
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        margin-left: 0;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      span {
+        i {
+          color: #fff;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    label {
+      color: #363636;
+      font-weight: 600;
+    }
+
+    .form-check-label {
+      font-size: 13px;
+    }
+
+    h3 {
+      i {
+        color: #f02264;
+        font-size: 16px;
+      }
+    }
+
+    p {
+      span {
+        color: #f02264;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/*-----------------------------*/
+/*----start here footer----*/
+/*-----------------------------*/
+
+.footer-bg {
+  width: 100%;
+  position: relative;
+  background-image: url('../img/footer-bg.png'); /*height: 100%;*/
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 0;
+
+  .title-list {
+    label {
+      a {
+        font-size: 13px;
+        margin-left: 10px;
+        color: #fff;
+      }
+    }
+  }
+
+  .social-icon {
+    color: #fff;
+
+    span {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  h5 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: lighter;
+    margin-top: 23px;
+  }
+
+  h6 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+
+    span {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 100;
+      font-family: 'Poppins';
+    }
+  }
+}
+
+.footer-down {
+  width: 100%;
+  background-color: #212121;
+  height: 90px;
+  padding: 30px 0;
+  @media screen and (max-width: 575px) {
+    height: auto;
+  }
+
+  p {
+    color: #fff;
+
+    span {
+      color: #f02264;
+    }
+  }
+}
+
+/*----end here sign-up page-------*/
+
+/*----start here brand drill down page-------*/
+.target-section {
+  padding: 50px 0;
+
+  .card-title {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #444444;
+  }
+
+  .card-text {
+    font-size: 16px;
+    color: #898989;
+    font-weight: 500;
+
+    span.email-id {
+      color: #f02264;
+      font-weight: 500;
+    }
+  }
+
+  .table-section {
+    .card-title {
+      font-size: 24px;
+    }
+  }
+
+  .btn-gift {
+    width: 100%;
+    background-color: #f02264;
+    border: 0;
+    font-size: 16px;
+    height: auto;
+    white-space: pre-line;
+  }
+
+  .table-wrapper {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 4px;
+
+    tbody {
+      tr {
+        td {
+          vertical-align: middle;
+
+          .add-cart-btn {
+            background-color: #f02264;
+            border: 0;
+            font-size: 16px;
+            height: auto;
+            white-space: pre-line;
+          }
+        }
+      }
+    }
+
+    thead {
+      tr {
+        th {
+          border-top: 0;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .custome-table {
+      .pagination {
+        .page-item {
+          .page-link {
+            border-radius: 3px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*----end here brand drill down page-------*/
+
+/*----start 2 page-------*/
+
+.gift-card-money {
+  background-color: #f02264;
+  height: auto;
+  padding: 57px 15px;
+
+  .gift-card-title {
+    width: 100%;
+
+    p {
+      font-size: 36px;
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 30px;
+      line-height: 1;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/*----end 2 page-------*/
+
+/*----start pay with card----*/
+
+.custom-table-main,.sell-table {
+  padding: 70px 0;
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+  height: 100vh;
+  position: relative;
+  @media screen and (max-width: 575px) {
+    height: auto;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    background-image: url('../img/design.png');
+    width: 26%;
+    height: 100px;
+    background-repeat: no-repeat;
+    left: 74%;
+    bottom: 0;
+    @media screen and (max-width: 575px) {
+      background-image: none;
+      left: 0;
+    }
+    @media screen and (max-width: 768px) {
+      background-image: none;
+      left: 0;
+    }
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .bg-gray {
+    background-color: #444444;
+    border: 0;
+  }
+
+  .custom-main {
+    box-shadow: 0 2px 9px 3px rgba(24, 24, 24, 0.3);
+    border-radius: 8px;
+    .custom-table {
+      thead.custom-thead {
+        background-color: #444444;
+        tr {
+          th {
+            text-align: center;
+            background-color: #444444;
+            border-color: #444444;
+            letter-spacing: 2.2px;
+          }
+        }
+      }
+
+      tbody {
+        background-color: #fff;
+
+        .starbucks-th {
+          img {
+            width: 50%;
+          }
+
+          p {
+            margin-bottom: 0;
+            text-align: center;
+          }
+        }
+
+        td {
+          vertical-align: middle;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .custom-btn-main {
+    .btn-cancel {
+      width: 160px;
+      font-family: Poppins;
+      padding: 10px;
+      background-color: #444444;
+    }
+
+    .btn-sell {
+      @extend .btn-cancel;
+      background-color: #f02264;
+    }
+  }
+
+  .checkout-main-title {
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 2px 9px 3px rgba(24, 24, 24, 0.3);
+    @media screen and (max-width: 1024px) {
+      padding: 17px;
+    }
+
+    p {
+      color: #777777;
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 24px;
+      color: #444;
+      font-weight: 500;
+    }
+  }
+
+  .custom-pay-with-card {
+    width: 100%;
+    background-color: #f02264;
+    font-size: 16px;
+  }
+
+  .order-summary-main {
+    ul.product-price-tex {
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+  }
+
+  .modal-header {
+    background-color: #f02264;
+    display: flex;
+    align-items: center;
+
+    .modal-title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+
+      span {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .modal-body {
+    background-color: #f5f5f5;
+
+    input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+      background-color: red;
+    }
+
+    .form-control {
+      background-color: #fff;
+      border: 1px solid #fff;
+    }
+
+    .btn-pay {
+      background-color: #f02264;
+      border: #f02264;
+    }
+
+    .custom-from-group {
+      padding: 10px;
+      border: 1px solid #e7e7e7;
+      border-radius: 5px;
+    }
+
+    h4.congratulations {
+      font-size: 36px;
+      color: #f02264;
+    }
+
+    p.congratulations-p {
+      font-size: 24px;
+      color: #444;
+    }
+
+    .custom-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 19px;
+    }
+  }
+}
+
+/*----end pay with card----*/
+
+/*----start redeem page ----*/
+
+.starbucks-th {
+  vertical-align: middle !important;
+}
+
+.btn-redeem {
+  font-size: 16px;
+  background-color: #f02264;
+  border: 0;
+}
+
+.redeem-main {
+  p {
+    font-size: 36px;
+    line-height: 1.4;
+    margin: 0;
+    color: #fff;
+  }
+}
+
+.redeem-box-main {
+  padding: 85px 0;
+  background-color: #f5f5f5;
+
+  .img-and-title {
+    background-color: #fff;
+    padding: 15px;
+    color: #444444;
+
+    &:after {
+      content: "";
+      border: 1px solid #e7e7e7;
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+
+    p {
+      font-weight: bold;
+
+      span {
+        color: #f02264;
+      }
+    }
+
+    .redeem-description {
+      display: flex;
+    }
+
+    h5 {
+      font-size: 14px;
+      color: #777777;
+    }
+
+    h4 {
+      color: #f02264;
+      font-size: 14px;
+    }
+
+    button.redeem-btn {
+      background-color: #444444;
+      border: 0;
+      font-size: 12px;
+
+      &:hover {
+        background-color: #f02264;
+      }
+    }
+  }
+}
+
+/*----end redeem page ----*/
+
+/*----start sell card details page ----*/
+
+.custom-gift-card-money {
+  .custom-sign {
+    background-color: #444444;
+    border: 0;
+    width: 120px;
+  }
+}
+
+.how-to-sell-gift-card {
+  padding: 80px 0;
+
+  .how-to-sell-gift-card-title {
+    h4 {
+      font-size: 36px;
+      line-height: 2;
+
+      span {
+        color: #f02264;
+      }
+
+      &:after {
+        content: "";
+        background-image: url('../img/symbol.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 57px;
+        background-position: center center;
+        display: block;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: #777777;
+    }
+  }
+
+  .box-main {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 9px;
+
+    .box-img {
+      border: 1px solid #f02264;
+      border-radius: 100%;
+      width: 40%;
+      height: 40%;
+      padding: 25px;
+      margin: 0 auto;
+    }
+
+    .box-img-description {
+      h4 {
+        color: #f02264;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #777777;
+      }
+    }
+  }
+}
+
+.faq-main {
+  .faq-title {
+    h4 {
+      font-size: 36px;
+      color: #444444;
+
+      span {
+        color: #f02264
+      }
+    }
+  }
+
+  #accordion {
+    .card-header {
+      .btn-link {
+        font-size: 16px;
+        color: #252525;
+        padding-left: 30px;
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          border: 2px solid #444444;
+          top: 0;
+          height: 38px;
+          left: 0;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      i {
+        position: absolute;
+        right: 13px;
+        top: 5px;
+      }
+    }
+
+    .card-body {
+      font-size: 14px;
+      color: #777777;
+    }
+  }
+}
+
+/*----start sell card details page ----*/
+
+/*----start sell  page ----*/
+
+.sell-btn{
+  button{
+    background-color: #f02264;
+    border:#f02264;
+  }
+}
+
+/*----end sell page ----*/
+
+/*----start Home page ----*/
+
+.hero-banner{
+  background-image: url("../img/hero-benner.jpg");width: 100%;height: 100vh;background-position: center center;background-size: cover;display: flex;justify-content: center;align-items: center;
+  .hero-bg{background-image: url("../img/design.png");width: 30%;height: 30vh;position: absolute;background-repeat: no-repeat;right: 0;left: 70%;background-size: cover;top: 82%;}
+  h5{font-size: 56px;font-weight: bold;color: #f02264;}
+  h4{font-size: 51px;line-height: 1.5;margin: 0;}
+  p{font-size: 24px;color: #444444;line-height: 36px;
+    span{color:#f02264;font-weight: bold;}
+  }
+  .auto-complete{
+    .input-group{
+      .input-group-prepend{
+        .input-group-text{background: #f02264;border-top-right-radius: 10px !important;border-bottom-right-radius: 10px !important;color: #fff;}
+      }
+    }
+  }
+}
+
+.great-deals{
+  padding: 70px 0;position: relative;
+  .section-title{
+    h4{font-size: 36px;font-weight: bold;line-height: 1.5;margin: 0;
+      span{color: #f02264;}
+      &:after{content: "";background-image: url("../img/symbol.png");background-repeat: no-repeat;width: 100%;height: 57px;background-position: center center;display: block;}
+    }
+    p{font-size: 16px;
+      color: #777777;}
+  }
+  .card{width: 100%;
+    .card-img-top{height: 148px;width: auto;}
+    .card-body{
+      h4{color: #f02264;font-size: 20px;font-weight: bold;}
+      p{color: #777777;font-size: 16px;}
+    }
+  }
+  .custom-load{
+    background-color: #f02264;border: 0;
+  }
+  &::after{content: "";position: absolute;background-image: url("../img/design.png");width: 26%;height: 100px;background-repeat: no-repeat;left: 74%;bottom: 0;}
+}
+
+/*----end Home page ----*/

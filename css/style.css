@@ -1,0 +1,634 @@
+@import url(../font/popins/stylesheet.css);
+@import url("https://use.typekit.net/ykz2ceq.css");
+/*------------------------*/
+/*-------common css-------*/
+/*------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins';
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #f5f7f9;
+  line-height: 24px; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Poppins'; }
+
+/*----start here sign-up page-------*/
+/*-------------------------*/
+/*----start here navbar----*/
+/*-------------------------*/
+.custom-nav {
+  background-color: #fff;
+  box-shadow: 0 9px 22px -4px rgba(45, 45, 45, 0.2);
+  height: 85px; }
+  @media screen and (max-width: 575px) {
+    .custom-nav {
+      height: auto;
+      text-align: center; } }
+  @media screen and (max-width: 768px) {
+    .custom-nav {
+      height: auto;
+      text-align: center; } }
+  .custom-nav img {
+    width: 245px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    @media screen and (max-width: 575px) {
+      .custom-nav img {
+        display: none; } }
+    @media screen and (max-width: 768px) {
+      .custom-nav img {
+        display: none; } }
+    @media screen and (max-width: 1024px) {
+      .custom-nav img {
+        width: 106px; } }
+  .custom-nav .navbar-brand {
+    color: #444444;
+    font-weight: 600;
+    font-size: 36px; }
+    .custom-nav .navbar-brand span {
+      font-weight: 100; }
+  .custom-nav .custom-collapse ul.navbar-nav li.nav-item {
+    width: 140px; }
+    @media screen and (max-width: 575px) {
+      .custom-nav .custom-collapse ul.navbar-nav li.nav-item {
+        width: auto; } }
+    .custom-nav .custom-collapse ul.navbar-nav li.nav-item a.nav-link {
+      font-weight: 600;
+      color: #444444;
+      text-transform: uppercase;
+      font-size: 16px; }
+      .custom-nav .custom-collapse ul.navbar-nav li.nav-item a.nav-link.active {
+        color: #f02264; }
+      .custom-nav .custom-collapse ul.navbar-nav li.nav-item a.nav-link:active {
+        color: #f02264; }
+      .custom-nav .custom-collapse ul.navbar-nav li.nav-item a.nav-link:hover {
+        color: #f02264; }
+    .custom-nav .custom-collapse ul.navbar-nav li.nav-item .dropdown .dropdown-toggle {
+      background-color: #f02264;
+      border: 0; }
+      .custom-nav .custom-collapse ul.navbar-nav li.nav-item .dropdown .dropdown-toggle span:after {
+        content: "";
+        border: 1px solid #fff;
+        right: 59px;
+        position: absolute;
+        top: 0;
+        height: 100%; }
+
+/*-------------------------*/
+/*----start here breadcrumb----*/
+/*-------------------------*/
+.custom-breadcrumb .breadcrumb {
+  background-color: unset;
+  font-size: 16px; }
+
+/*-----------------------------*/
+/*----start here breadcrumb----*/
+/*-----------------------------*/
+.sign-up-form-section {
+  padding: 80px 0; }
+  @media screen and (max-width: 575px) {
+    .sign-up-form-section {
+      padding: 30px 0; } }
+  @media screen and (max-width: 768px) {
+    .sign-up-form-section {
+      padding: 30px 0; } }
+  .sign-up-form-section .sign-up-form {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 575px) {
+      .sign-up-form-section .sign-up-form {
+        padding: 15px; } }
+    .sign-up-form-section .sign-up-form input[type=checkbox] {
+      background-color: #fff;
+      border-radius: 3px;
+      width: 15px;
+      height: 15px;
+      border: 0; }
+    .sign-up-form-section .sign-up-form .custom-submit-btn {
+      margin-top: 10px;
+      background-color: #f02264;
+      border: unset;
+      font-size: 16px;
+      font-weight: bold;
+      height: 40px; }
+    .sign-up-form-section .sign-up-form .custom-google-btn {
+      background-color: #ec4949;
+      font-size: 14px;
+      color: #fff;
+      border: 0;
+      width: 50%; }
+      @media screen and (max-width: 575px) {
+        .sign-up-form-section .sign-up-form .custom-google-btn {
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .sign-up-form-section .sign-up-form .custom-google-btn {
+          width: 100%;
+          margin-left: 0; } }
+      .sign-up-form-section .sign-up-form .custom-google-btn span i {
+        color: #fff;
+        margin-right: 10px; }
+    .sign-up-form-section .sign-up-form .custom-facebook-btn {
+      background-color: #3b5998;
+      font-size: 14px;
+      border: 0;
+      width: 50%;
+      margin-left: 10px; }
+      @media screen and (max-width: 575px) {
+        .sign-up-form-section .sign-up-form .custom-facebook-btn {
+          width: 100%;
+          margin-left: 0; } }
+      @media screen and (max-width: 768px) {
+        .sign-up-form-section .sign-up-form .custom-facebook-btn {
+          width: 100%;
+          margin-left: 0; } }
+      .sign-up-form-section .sign-up-form .custom-facebook-btn span i {
+        color: #fff;
+        margin-right: 10px; }
+    .sign-up-form-section .sign-up-form label {
+      color: #363636;
+      font-weight: 600; }
+    .sign-up-form-section .sign-up-form .form-check-label {
+      font-size: 13px; }
+    .sign-up-form-section .sign-up-form h3 i {
+      color: #f02264;
+      font-size: 16px; }
+    .sign-up-form-section .sign-up-form p span {
+      color: #f02264;
+      font-weight: 500;
+      text-decoration: underline; }
+
+/*-----------------------------*/
+/*----start here footer----*/
+/*-----------------------------*/
+.footer-bg {
+  width: 100%;
+  position: relative;
+  background-image: url("../img/footer-bg.png");
+  /*height: 100%;*/
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 0; }
+  .footer-bg .title-list label a {
+    font-size: 13px;
+    margin-left: 10px;
+    color: #fff; }
+  .footer-bg .social-icon {
+    color: #fff; }
+    .footer-bg .social-icon span {
+      margin: 0 20px 0 0; }
+  .footer-bg h5 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: lighter;
+    margin-top: 23px; }
+  .footer-bg h6 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; }
+    .footer-bg h6 span {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 100;
+      font-family: 'Poppins'; }
+
+.footer-down {
+  width: 100%;
+  background-color: #212121;
+  height: 90px;
+  padding: 30px 0; }
+  @media screen and (max-width: 575px) {
+    .footer-down {
+      height: auto; } }
+  .footer-down p {
+    color: #fff; }
+    .footer-down p span {
+      color: #f02264; }
+
+/*----end here sign-up page-------*/
+/*----start here brand drill down page-------*/
+.target-section {
+  padding: 50px 0; }
+  .target-section .card-title {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #444444; }
+  .target-section .card-text {
+    font-size: 16px;
+    color: #898989;
+    font-weight: 500; }
+    .target-section .card-text span.email-id {
+      color: #f02264;
+      font-weight: 500; }
+  .target-section .table-section .card-title {
+    font-size: 24px; }
+  .target-section .btn-gift {
+    width: 100%;
+    background-color: #f02264;
+    border: 0;
+    font-size: 16px;
+    height: auto;
+    white-space: pre-line; }
+  .target-section .table-wrapper {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 4px; }
+    .target-section .table-wrapper tbody tr td {
+      vertical-align: middle; }
+      .target-section .table-wrapper tbody tr td .add-cart-btn {
+        background-color: #f02264;
+        border: 0;
+        font-size: 16px;
+        height: auto;
+        white-space: pre-line; }
+    .target-section .table-wrapper thead tr th {
+      border-top: 0;
+      vertical-align: middle; }
+    .target-section .table-wrapper .custome-table .pagination .page-item .page-link {
+      border-radius: 3px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+
+/*----end here brand drill down page-------*/
+/*----start 2 page-------*/
+.gift-card-money {
+  background-color: #f02264;
+  height: auto;
+  padding: 57px 15px; }
+  .gift-card-money .gift-card-title {
+    width: 100%; }
+    .gift-card-money .gift-card-title p {
+      font-size: 36px;
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 30px;
+      line-height: 1; }
+      .gift-card-money .gift-card-title p span {
+        font-weight: 600; }
+
+/*----end 2 page-------*/
+/*----start pay with card----*/
+.custom-table-main, .sell-table {
+  padding: 70px 0;
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+  height: 100vh;
+  position: relative; }
+  @media screen and (max-width: 575px) {
+    .custom-table-main, .sell-table {
+      height: auto; } }
+  .custom-table-main:after, .sell-table:after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/design.png");
+    width: 26%;
+    height: 100px;
+    background-repeat: no-repeat;
+    left: 74%;
+    bottom: 0; }
+    @media screen and (max-width: 575px) {
+      .custom-table-main:after, .sell-table:after {
+        background-image: none;
+        left: 0; } }
+    @media screen and (max-width: 768px) {
+      .custom-table-main:after, .sell-table:after {
+        background-image: none;
+        left: 0; } }
+    @media screen and (max-width: 1024px) {
+      .custom-table-main:after, .sell-table:after {
+        display: none; } }
+  .custom-table-main .bg-gray, .sell-table .bg-gray {
+    background-color: #444444;
+    border: 0; }
+  .custom-table-main .custom-main, .sell-table .custom-main {
+    box-shadow: 0 2px 9px 3px rgba(24, 24, 24, 0.3);
+    border-radius: 8px; }
+    .custom-table-main .custom-main .custom-table thead.custom-thead, .sell-table .custom-main .custom-table thead.custom-thead {
+      background-color: #444444; }
+      .custom-table-main .custom-main .custom-table thead.custom-thead tr th, .sell-table .custom-main .custom-table thead.custom-thead tr th {
+        text-align: center;
+        background-color: #444444;
+        border-color: #444444;
+        letter-spacing: 2.2px; }
+    .custom-table-main .custom-main .custom-table tbody, .sell-table .custom-main .custom-table tbody {
+      background-color: #fff; }
+      .custom-table-main .custom-main .custom-table tbody .starbucks-th img, .sell-table .custom-main .custom-table tbody .starbucks-th img {
+        width: 50%; }
+      .custom-table-main .custom-main .custom-table tbody .starbucks-th p, .sell-table .custom-main .custom-table tbody .starbucks-th p {
+        margin-bottom: 0;
+        text-align: center; }
+      .custom-table-main .custom-main .custom-table tbody td, .sell-table .custom-main .custom-table tbody td {
+        vertical-align: middle;
+        text-align: center; }
+  .custom-table-main .custom-btn-main .btn-cancel, .custom-table-main .custom-btn-main .btn-sell, .sell-table .custom-btn-main .btn-cancel, .sell-table .custom-btn-main .btn-sell {
+    width: 160px;
+    font-family: Poppins;
+    padding: 10px;
+    background-color: #444444; }
+  .custom-table-main .custom-btn-main .btn-sell, .sell-table .custom-btn-main .btn-sell {
+    background-color: #f02264; }
+  .custom-table-main .checkout-main-title, .sell-table .checkout-main-title {
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 2px 9px 3px rgba(24, 24, 24, 0.3); }
+    @media screen and (max-width: 1024px) {
+      .custom-table-main .checkout-main-title, .sell-table .checkout-main-title {
+        padding: 17px; } }
+    .custom-table-main .checkout-main-title p, .sell-table .checkout-main-title p {
+      color: #777777;
+      font-size: 16px; }
+    .custom-table-main .checkout-main-title h4, .sell-table .checkout-main-title h4 {
+      font-size: 24px;
+      color: #444;
+      font-weight: 500; }
+  .custom-table-main .custom-pay-with-card, .sell-table .custom-pay-with-card {
+    width: 100%;
+    background-color: #f02264;
+    font-size: 16px; }
+  .custom-table-main .order-summary-main ul.product-price-tex:after, .sell-table .order-summary-main ul.product-price-tex:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #cccccc; }
+  .custom-table-main .modal-header, .sell-table .modal-header {
+    background-color: #f02264;
+    display: flex;
+    align-items: center; }
+    .custom-table-main .modal-header .modal-title, .sell-table .modal-header .modal-title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold; }
+      .custom-table-main .modal-header .modal-title span, .sell-table .modal-header .modal-title span {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: normal; }
+  .custom-table-main .modal-body, .sell-table .modal-body {
+    background-color: #f5f5f5; }
+    .custom-table-main .modal-body input[type=checkbox], .sell-table .modal-body input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+      background-color: red; }
+    .custom-table-main .modal-body .form-control, .sell-table .modal-body .form-control {
+      background-color: #fff;
+      border: 1px solid #fff; }
+    .custom-table-main .modal-body .btn-pay, .sell-table .modal-body .btn-pay {
+      background-color: #f02264;
+      border: #f02264; }
+    .custom-table-main .modal-body .custom-from-group, .sell-table .modal-body .custom-from-group {
+      padding: 10px;
+      border: 1px solid #e7e7e7;
+      border-radius: 5px; }
+    .custom-table-main .modal-body h4.congratulations, .sell-table .modal-body h4.congratulations {
+      font-size: 36px;
+      color: #f02264; }
+    .custom-table-main .modal-body p.congratulations-p, .sell-table .modal-body p.congratulations-p {
+      font-size: 24px;
+      color: #444; }
+    .custom-table-main .modal-body .custom-close, .sell-table .modal-body .custom-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 19px; }
+
+/*----end pay with card----*/
+/*----start redeem page ----*/
+.starbucks-th {
+  vertical-align: middle !important; }
+
+.btn-redeem {
+  font-size: 16px;
+  background-color: #f02264;
+  border: 0; }
+
+.redeem-main p {
+  font-size: 36px;
+  line-height: 1.4;
+  margin: 0;
+  color: #fff; }
+
+.redeem-box-main {
+  padding: 85px 0;
+  background-color: #f5f5f5; }
+  .redeem-box-main .img-and-title {
+    background-color: #fff;
+    padding: 15px;
+    color: #444444; }
+    .redeem-box-main .img-and-title:after {
+      content: "";
+      border: 1px solid #e7e7e7;
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0; }
+    .redeem-box-main .img-and-title img {
+      width: auto;
+      height: 100%; }
+    .redeem-box-main .img-and-title p {
+      font-weight: bold; }
+      .redeem-box-main .img-and-title p span {
+        color: #f02264; }
+    .redeem-box-main .img-and-title .redeem-description {
+      display: flex; }
+    .redeem-box-main .img-and-title h5 {
+      font-size: 14px;
+      color: #777777; }
+    .redeem-box-main .img-and-title h4 {
+      color: #f02264;
+      font-size: 14px; }
+    .redeem-box-main .img-and-title button.redeem-btn {
+      background-color: #444444;
+      border: 0;
+      font-size: 12px; }
+      .redeem-box-main .img-and-title button.redeem-btn:hover {
+        background-color: #f02264; }
+
+/*----end redeem page ----*/
+/*----start sell card details page ----*/
+.custom-gift-card-money .custom-sign {
+  background-color: #444444;
+  border: 0;
+  width: 120px; }
+
+.how-to-sell-gift-card {
+  padding: 80px 0; }
+  .how-to-sell-gift-card .how-to-sell-gift-card-title h4 {
+    font-size: 36px;
+    line-height: 2; }
+    .how-to-sell-gift-card .how-to-sell-gift-card-title h4 span {
+      color: #f02264; }
+    .how-to-sell-gift-card .how-to-sell-gift-card-title h4:after {
+      content: "";
+      background-image: url("../img/symbol.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 57px;
+      background-position: center center;
+      display: block; }
+  .how-to-sell-gift-card .how-to-sell-gift-card-title p {
+    font-size: 16px;
+    color: #777777; }
+  .how-to-sell-gift-card .box-main {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 9px; }
+    .how-to-sell-gift-card .box-main .box-img {
+      border: 1px solid #f02264;
+      border-radius: 100%;
+      width: 40%;
+      height: 40%;
+      padding: 25px;
+      margin: 0 auto; }
+    .how-to-sell-gift-card .box-main .box-img-description h4 {
+      color: #f02264;
+      font-weight: bold;
+      font-size: 16px; }
+    .how-to-sell-gift-card .box-main .box-img-description p {
+      font-size: 16px;
+      color: #777777; }
+
+.faq-main .faq-title h4 {
+  font-size: 36px;
+  color: #444444; }
+  .faq-main .faq-title h4 span {
+    color: #f02264; }
+.faq-main #accordion .card-header .btn-link {
+  font-size: 16px;
+  color: #252525;
+  padding-left: 30px; }
+  .faq-main #accordion .card-header .btn-link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #444444;
+    top: 0;
+    height: 38px;
+    left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  .faq-main #accordion .card-header .btn-link:hover {
+    text-decoration: none; }
+.faq-main #accordion .card-header i {
+  position: absolute;
+  right: 13px;
+  top: 5px; }
+.faq-main #accordion .card-body {
+  font-size: 14px;
+  color: #777777; }
+
+/*----start sell card details page ----*/
+/*----start sell  page ----*/
+.sell-btn button {
+  background-color: #f02264;
+  border: #f02264; }
+
+/*----end sell page ----*/
+/*----start Home page ----*/
+.hero-banner {
+  background-image: url("../img/hero-benner.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero-banner .hero-bg {
+    background-image: url("../img/design.png");
+    width: 30%;
+    height: 30vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0;
+    left: 70%;
+    background-size: cover;
+    top: 82%; }
+  .hero-banner h5 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #f02264; }
+  .hero-banner h4 {
+    font-size: 51px;
+    line-height: 1.5;
+    margin: 0; }
+  .hero-banner p {
+    font-size: 24px;
+    color: #444444;
+    line-height: 36px; }
+    .hero-banner p span {
+      color: #f02264;
+      font-weight: bold; }
+  .hero-banner .auto-complete .input-group .input-group-prepend .input-group-text {
+    background: #f02264;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    color: #fff; }
+
+.great-deals {
+  padding: 70px 0;
+  position: relative; }
+  .great-deals .section-title h4 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0; }
+    .great-deals .section-title h4 span {
+      color: #f02264; }
+    .great-deals .section-title h4:after {
+      content: "";
+      background-image: url("../img/symbol.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 57px;
+      background-position: center center;
+      display: block; }
+  .great-deals .section-title p {
+    font-size: 16px;
+    color: #777777; }
+  .great-deals .card {
+    width: 100%; }
+    .great-deals .card .card-img-top {
+      height: 148px;
+      width: auto; }
+    .great-deals .card .card-body h4 {
+      color: #f02264;
+      font-size: 20px;
+      font-weight: bold; }
+    .great-deals .card .card-body p {
+      color: #777777;
+      font-size: 16px; }
+  .great-deals .custom-load {
+    background-color: #f02264;
+    border: 0; }
+  .great-deals::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/design.png");
+    width: 26%;
+    height: 100px;
+    background-repeat: no-repeat;
+    left: 74%;
+    bottom: 0; }
+
+/*----end Home page ----*/
+
+/*# sourceMappingURL=style.css.map */

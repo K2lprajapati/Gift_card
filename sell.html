@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>sell</title>
+    <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://use.typekit.net/ykz2ceq.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--script start here-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+        <img alt="bg-img" src="img/navbar-bg.png">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gift<span>Card</span></a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse custom-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sale Gift Card<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Buy Gift Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signup.html"><span class="mr-2"><i
+                                class="far fa-user"></i></span>Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html"><span class="mr-2"><i class="fas fa-user-lock"></i></span>Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle"
+                                    data-toggle="dropdown" id="dropdownMenuButton" type="button">
+                                <span class="position-relative"><i class="fas fa-shopping-cart mr-4"></i>2 ITEM</span>
+                            </button>
+                            <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="gift-card-money custom-gift-card-money">
+    <div class="container">
+        <div class="row">
+            <div class="gift-card-title text-center">
+                <p>Do you have any cards to sell?</p>
+                <form>
+                    <div class="form-row justify-content-center align-items-center">
+                        <div class="form-group col-md-6 mb-xl-0 mb-md-2 mb-3 text-left">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="Search this blog" type="text">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2 mb-xl-0 mb-md-2 mb-3 text-left">
+                            <select class="form-control" id="inputState">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-1 mb-0" style="margin-top: 0;">
+                            <button class="btn btn-primary custom-sign" type="submit">Get Offer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5 sell-table">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="table-responsive custom-main">
+                    <table class="table custom-table mb-0">
+                        <thead class="thead-dark custom-thead">
+                        <tr>
+                            <th class="text-center" scope="col">Brand</th>
+                            <th class="text-center" scope="col">value</th>
+                            <th class="text-center" scope="col">Card Number</th>
+                            <th class="text-center" scope="col">Pin</th>
+                            <th class="text-center" scope="col">Ammount</th>
+                            <th class="text-center" scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="starbucks-th text-center" scope="row">
+                                <img alt="star" src="img/starbucks.png">
+                                <p>Starbucks</p>
+                            </th>
+                            <td>
+                                <div class="form-group mb-0">
+                                    <p class="mb-0">123456789</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group mb-0">
+                                    <input class="form-control" id="inputpin" placeholder="Number" type="text">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group mb-0">
+                                    <input class="form-control" id="inputamount" placeholder="Pin" type="text">
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <p class="mb-0" style="color: #f02264">$7.50</p>
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4 text-center sell-btn">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Get $7.50 Cash</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Sell Payment</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1">ACH Payment</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2">Check Payment</label>
+                                </div>
+                                <form class="needs-validation mt-4" novalidate>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip01">First name*</label>
+                                            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
+                                            <div class="valid-tooltip">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip02">Last name*</label>
+                                            <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" required>
+                                            <div class="valid-tooltip">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="validationTooltip02">Street Address*</label>
+                                            <input type="text" class="form-control" id="validationTooltip03" placeholder="House number and street name" required>
+                                            <input type="text" class="form-control mt-2" id="validationTooltip04" placeholder="Appartment" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip01">City / Town *</label>
+                                            <input type="text" class="form-control" id="validationTooltip05" placeholder="First name" value="Mark" required>
+                                            <div class="valid-tooltip">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip02">State *</label>
+                                            <input type="text" class="form-control" id="validationTooltip06" placeholder="Last name" required>
+                                            <div class="valid-tooltip">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip01">Country *</label>
+                                            <input type="text" class="form-control" id="validationTooltip07" placeholder="First name" value="Mark" required>
+                                            <div class="valid-tooltip">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip02">Postal Code *</label>
+                                            <input type="text" class="form-control" id="validationTooltip08" placeholder="Last name" required>
+                                            <div class="valid-tooltip">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip01">Phone No *</label>
+                                            <input type="text" class="form-control" id="validationTooltip09" placeholder="First name" value="Mark" required>
+                                            <div class="valid-tooltip">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip02">Email address *</label>
+                                            <input type="text" class="form-control" id="validationTooltip10" placeholder="Last name" required>
+                                            <div class="valid-tooltip">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationTooltip03">City</label>
+                                            <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+                                            <div class="invalid-tooltip">
+                                                Please provide a valid city.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="validationTooltip04">State</label>
+                                            <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+                                            <div class="invalid-tooltip">
+                                                Please provide a valid state.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="validationTooltip05">Zip</label>
+                                            <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+                                            <div class="invalid-tooltip">
+                                                Please provide a valid zip.
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                </form>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-primary">confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="title-list">
+                    <h6>Gift<span>Card</span></h6>
+                    <h5>All Content © 2016 CardCookie Marketplace Inc.
+                        CardCookie and the CardCookie logo are registered trademarks belonging to CardCookie.
+                        All trademarks not owned by [...]
+                        <!--CardCookie that appear on this site are the property of their respective owners.
+                        All gift cards sold on CardCookie are backed by our 100-Day Guarantee. For questions about redeeming gift cards, contact CardCookie Member Services at (877) 550-1738 or support@CardCookie.com.-->
+                    </h5>
+                    <div class="social-icon">
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-12 col-md-4 offset-md-2 offset-lg-0 offset-xl-0 col-lg-3 col-xl-3">
+                <div class="title-list">
+                    <p class="text-white">HOW IT WORKS</p>
+                    <ul class="text-white list-unstyled">
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="signup.html">Sign up</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Buy Discount Gift Cards</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">100 Day Guarantee</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Shipping & Delivery</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Buy in Bulk</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">FAQ</a></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-2 col-xl-2">
+                <div class="title-list">
+                    <p class="text-white">ABOUT</p>
+                    <ul class="text-white list-unstyled">
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">About Giftcard</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Contact Us</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Terms of Service</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Privacy Policy</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Reviews</a></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-2 col-xl-2">
+                <div class="title-list">
+                    <p class="text-white">CHECK BALANCE</p>
+                    <ul class="text-white list-unstyled">
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">About Giftcard</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Contact Us</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Terms of Service</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Privacy Policy</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Reviews</a></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-2 col-xl-2">
+                <div class="title-list">
+                    <p class="text-white">CATEGORIES</p>
+                    <ul class="text-white list-unstyled">
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="#">All Categories</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Restaurants</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Sporting Goods</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Department Stores</a></label>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            <label><a href="">Movies & Entertainment</a></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="footer-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-6 col-lg-6">
+                <p>Copyright © 2013-2019 <span>giftcard</span>. All rights reserved.</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-6 col-lg-6">
+                <div class="d-flex justify-content-center justify-content-md-end justify-content-lg-end justify-content-xl-end">
+                    <p class="mr-3">Fraud Prevention</p>
+                    <p>Data Safety</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
